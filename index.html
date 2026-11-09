@@ -1,222 +1,230 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ángel | Servicios Informáticos</title>
-
-    <meta name="description"
-          content="Desarrollo web, aplicaciones y soluciones informáticas para empresas y particulares.">
-
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f7fb;
-            color: #1e293b;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #101827;
-            color: white;
-            padding: 24px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        header h2 {
-            color: #60a5fa;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 18px;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 90px 20px;
-            background-color: #172554;
-            color: white;
-        }
-
-        .hero h1 {
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            max-width: 650px;
-            margin: 0 auto 28px;
-            color: #dbeafe;
-        }
-
-        .boton {
-            display: inline-block;
-            background-color: #3b82f6;
-            color: white;
-            padding: 13px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .servicios {
-            max-width: 1100px;
-            margin: auto;
-            padding: 60px 20px;
-        }
-
-        .servicios h2,
-        .contacto h2 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .tarjetas {
-            display: grid;
-            grid-template-columns: repeat(
-                auto-fit, minmax(220px, 1fr)
-            );
-            gap: 20px;
-        }
-
-        .tarjeta {
-            background-color: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px #0000000d;
-        }
-
-        .tarjeta h3 {
-            margin-bottom: 10px;
-            color: #2563eb;
-        }
-
-        .contacto {
-            background-color: white;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .contacto p {
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #101827;
-            color: #cbd5e1;
-            padding: 22px;
-            text-align: center;
-        }
-
-        @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-            }
-
-            nav a {
-                margin: 0 7px;
-            }
-
-            .hero {
-                padding: 60px 20px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechSolutions | Infraestructura IT, Cloud & Desarrollo de Software</title>
+  <meta name="description" content="Servicios integrales de ciberseguridad, cloud, desarrollo de software e infraestructura IT.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <header>
-        <h2>Ángel Dev</h2>
+  <!-- NAVEGACIÓN -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-accent">/</span>TECHSOLUTIONS
+      </a>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#capacidades" class="nav-link">Capacidades</a>
+        <a href="#soluciones" class="nav-link">Soluciones</a>
+        <a href="#mantenimiento" class="nav-link">Planes IT</a>
+        <a href="#contacto" class="btn btn-outline">Contacto</a>
+      </nav>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
 
-        <nav>
-            <a href="#servicios">Servicios</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="container hero-content">
+      <div class="badge">INGENIERÍA TECNOLÓGICA & INFRAESTRUCTURA</div>
+      <h1 class="hero-title">Capacidad tecnológica integral para impulsar y proteger su negocio</h1>
+      <p class="hero-subtitle">
+        Provisión, despliegue y mantenimiento de infraestructuras críticas, modernización cloud, ciberseguridad avanzada y desarrollo de software a medida.
+      </p>
+      <div class="hero-actions">
+        <a href="#capacidades" class="btn btn-primary">Explorar Servicios</a>
+        <a href="#contacto" class="btn btn-secondary">Solicitar Propuesta Técnica</a>
+      </div>
+    </div>
+  </section>
 
-    <main>
-        <section class="hero">
-            <h1>Soluciones ---- informáticas para tu negocio</h1>
+  <!-- SECCIÓN CAPACIDADES / SERVICIOS AGRUPADOS -->
+  <section class="section" id="capacidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">CAPACIDADES B2B & SERVICIOS</span>
+        <h2>Áreas de especialización técnica</h2>
+        <p>Soluciones organizadas por unidades operativas para particulares, PYMEs y grandes infraestructuras.</p>
+      </div>
 
-            <p>
-                Desarrollo páginas web, aplicaciones y soluciones
-                tecnológicas adaptadas a las necesidades de cada cliente.
-            </p>
+      <div class="services-grid">
+        
+        <!-- Bloque 1: Cloud & DevOps -->
+        <article class="service-card">
+          <div class="service-badge">UNIDAD 01</div>
+          <h3 class="service-title">Cloud, DevOps & Ciberseguridad</h3>
+          <p class="service-desc">Protección perimetral, modernización de cargas de trabajo y arquitecturas seguras en la nube.</p>
+          <ul class="service-list">
+            <li>Servicios Cloud y administración de servidores</li>
+            <li>Servicios de ciberseguridad para empresas</li>
+            <li>Docker/Podman, despliegues y entornos DevOps</li>
+            <li>Copias de seguridad y recuperación ante desastres</li>
+          </ul>
+        </article>
 
-            <a class="boton" href="#contacto">
-                Solicitar información
-            </a>
-        </section>
+        <!-- Bloque 2: Desarrollo & Soluciones Digitales -->
+        <article class="service-card">
+          <div class="service-badge">UNIDAD 02</div>
+          <h3 class="service-title">Desarrollo de Software & Digitalización</h3>
+          <p class="service-desc">Construcción de software de alta exigencia, arquitecturas escalables e interfaces modernas.</p>
+          <ul class="service-list">
+            <li>Diseño y desarrollo de páginas web</li>
+            <li>Desarrollo de aplicaciones móviles (iOS / Android)</li>
+            <li>Desarrollo de software a medida para empresas</li>
+            <li>Paneles de administración y cuadros de mando internos</li>
+            <li>Automatización de procesos empresariales (RPA / Workflows)</li>
+            <li>Digitalización integral de pequeños negocios</li>
+          </ul>
+        </article>
 
-        <section class="servicios" id="servicios">
-            <h2>Mis servicios</h2>
+        <!-- Bloque 3: Soluciones de Negocio Verticales -->
+        <article class="service-card">
+          <div class="service-badge">UNIDAD 03</div>
+          <h3 class="service-title">Sistemas de Gestión & E-commerce</h3>
+          <p class="service-desc">Herramientas operativas orientadas al control de ventas, reservas y presencia digital comercial.</p>
+          <ul class="service-list">
+            <li>Sistemas de gestión operativa (ERP / CRM)</li>
+            <li>Software especializado para restaurantes y bares</li>
+            <li>Sistemas de reservas y gestión de citas automatizadas</li>
+            <li>Plataformas de venta online y tiendas e-commerce</li>
+            <li>Venta, despliegue e instalación de software empresarial</li>
+          </ul>
+        </article>
 
-            <div class="tarjetas">
-                <article class="tarjeta">
-                    <h3>Desarrollo web</h3>
-                    <p>
-                        Páginas web modernas, rápidas y adaptadas
-                        a móviles para profesionales y empresas.
-                    </p>
-                </article>
+        <!-- Bloque 4: Redes & Comunicaciones -->
+        <article class="service-card">
+          <div class="service-badge">UNIDAD 04</div>
+          <h3 class="service-title">Infraestructura, Redes & Conectividad</h3>
+          <p class="service-desc">Despliegue de comunicaciones fiables de baja latencia y mantenimiento de enlaces críticos.</p>
+          <ul class="service-list">
+            <li>Instalación y configuración de redes para empresas</li>
+            <li>Despliegue de Wi-Fi empresarial y redes locales (LAN/VLAN)</li>
+            <li>Migración y consolidación de sistemas informáticos</li>
+            <li>Mantenimiento de impresoras, periféricos y equipamiento de red</li>
+          </ul>
+        </article>
 
-                <article class="tarjeta">
-                    <h3>Aplicaciones</h3>
-                    <p>
-                        Desarrollo de aplicaciones y soluciones
-                        de software a medida.
-                    </p>
-                </article>
+        <!-- Bloque 5: Soporte & Hardware -->
+        <article class="service-card">
+          <div class="service-badge">UNIDAD 05</div>
+          <h3 class="service-title">Hardware, Reparación & Formación</h3>
+          <p class="service-desc">Asistencia in-situ, diagnóstico de averías, laboratorio de hardware y capacitación.</p>
+          <ul class="service-list">
+            <li>Reparación y mantenimiento de ordenadores y portátiles</li>
+            <li>Servicio técnico informático profesional a domicilio</li>
+            <li>Montaje, optimización y configuración de PCs profesionales</li>
+            <li>Tienda física / distribución de informática y accesorios</li>
+            <li>Formación informática y capacitación para particulares y equipos</li>
+          </ul>
+        </article>
 
-                <article class="tarjeta">
-                    <h3>Bases de datos</h3>
-                    <p>
-                        Diseño y gestión de bases de datos
-                        para organizar la información.
-                    </p>
-                </article>
+        <!-- Bloque 6: Mantenimiento Gestionado -->
+        <article class="service-card highlight-card">
+          <div class="service-badge highlight-badge">CONTRATO CONTINUO</div>
+          <h3 class="service-title">Mantenimiento Informático Integral</h3>
+          <p class="service-desc">Garantía de continuidad operativa con cobertura prioritaria para su infraestructura de negocio.</p>
+          <ul class="service-list">
+            <li>Servicio mensual de mantenimiento preventivo y correctivo</li>
+            <li>Monitorización remota de incidentes y parches de seguridad</li>
+            <li>Soporte técnico preferente multicanal (remoto y presencial)</li>
+            <li>Auditorías periódicas de estabilidad de red y datos</li>
+          </ul>
+        </article>
 
-                <article class="tarjeta">
-                    <h3>Soporte informático</h3>
-                    <p>
-                        Ayuda con instalaciones, configuración
-                        y resolución de problemas informáticos.
-                    </p>
-                </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE CONTACTO (Integrado con Web3Forms) -->
+  <section class="section section-dark" id="contacto">
+    <div class="container">
+      <div class="contact-box">
+        <div class="contact-info">
+          <span class="section-tag">CONSULTORÍA & CONTACTO</span>
+          <h2>Inicie su proyecto con nosotros</h2>
+          <p>Complete el formulario para solicitar una auditoría técnica preliminar o un presupuesto personalizado.</p>
+          
+          <div class="info-block">
+            <strong>Disponibilidad</strong>
+            <p>Soporte a empresas bajo SLA & atención técnica programada.</p>
+          </div>
+          <div class="info-block">
+            <strong>Modalidades</strong>
+            <p>Asistencia en sitio, gestión remota o contratos de suscripción mensual.</p>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <!-- REEMPLAZA ESTE TOKEN POR TU ACCESS KEY DE WEB3FORMS -->
+          <input type="hidden" name="access_key" value="4b80f4bb-10d7-451e-a370-4e221707184c">
+          <input type="hidden" name="subject" value="Nueva solicitud de servicio desde el sitio web">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+          <div class="form-group">
+            <label for="name">Nombre y apellidos / Empresa</label>
+            <input type="text" name="name" id="name" required placeholder="Ej. Carlos Martínez - Nova Soluciones">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Correo electrónico corporativo</label>
+              <input type="email" name="email" id="email" required placeholder="nombre@empresa.com">
             </div>
-        </section>
+            <div class="form-group">
+              <label for="phone">Teléfono de contacto</label>
+              <input type="tel" name="phone" id="phone" placeholder="+34 600 000 000">
+            </div>
+          </div>
 
-        <section class="contacto" id="contacto">
-            <h2>¿Hablamos de tu proyecto?</h2>
+          <div class="form-group">
+            <label for="service">Servicio requerido</label>
+            <select name="service" id="service" required>
+              <option value="" disabled selected>Seleccione un área técnica...</option>
+              <option value="cloud-devops-seguridad">Cloud, DevOps & Ciberseguridad</option>
+              <option value="desarrollo-software">Desarrollo Web / Móvil / Software a medida</option>
+              <option value="sistemas-gestion">Sistemas de Gestión / TPV / Citas / E-commerce</option>
+              <option value="redes-infraestructura">Instalación de Redes & Conectividad Wi-Fi</option>
+              <option value="reparacion-soporte">Soporte técnico, Hardware o Reparación</option>
+              <option value="mantenimiento-mensual">Mantenimiento mensual para empresas</option>
+              <option value="otro">Otro requerimiento técnico</option>
+            </select>
+          </div>
 
-            <p>
-                Cuéntame qué necesitas y estudiamos una solución.
-            </p>
+          <div class="form-group">
+            <label for="message">Detalles del requerimiento</label>
+            <textarea name="message" id="message" rows="4" required placeholder="Describa brevemente la infraestructura, incidencia o alcance del proyecto..."></textarea>
+          </div>
 
-            <a class="boton"
-               href="mailto:TU_CORREO@ejemplo.com">
-                Enviar un correo
-            </a>
-        </section>
-    </main>
+          <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Enviar Requerimiento</button>
+          <div id="form-result" class="form-result"></div>
+        </form>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2026 Ángel Dev. Todos los derechos reservados.</p>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#" class="brand-logo"><span class="logo-accent">/</span>TECHSOLUTIONS</a>
+        <p>Servicios profesionales de infraestructura tecnológica, software y mantenimiento para organizaciones y particulares.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechSolutions. Todos los derechos reservados. Alojadado en GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
